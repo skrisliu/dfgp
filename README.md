@@ -1,4 +1,4 @@
- ## Deep Feature Gaussian Processes for Single-Scene Aerosol Optical Depth Reconstruction
+## Deep Feature Gaussian Processes for Single-Scene Aerosol Optical Depth Reconstruction
 [Shengjie Liu](https://skrisliu.com), [Lu Zhang](https://luzhangstat.github.io/)
 
 This is a GitHub repo at [https://github.com/skrisliu/dfgp](https://github.com/skrisliu/dfgp)
