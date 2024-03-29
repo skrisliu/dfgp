@@ -19,6 +19,7 @@ This repo includes the MODIS-LA data, with trained CNN network and deep features
 	data/modis/testmask.npy   # test mask, 240*300
 	data/modis/fea64.npy      # deep features, 240*300*64
 	data/modis/cnn.pt         # trained CNN model
+
 Data required to run the MODIS-LA demo are included in this repo. You can also download the MODIS-LA data at [Google Drive](https://drive.google.com/file/d/1S1QFvX5_vF57SbiGdCfX-SLQnhC2-ZLg/view?usp=drive_link).
 
 ##### DFGP
