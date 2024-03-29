@@ -5,7 +5,7 @@ This is a GitHub repo at [https://github.com/skrisliu/dfgp](https://github.com/s
 
 
 ### Key Packages
-	torch==2.0.1
+	pytorch==2.0.1
 	gpytorch==1.11
 
 Tested on Python 3.9, Ubuntu 18.04.6 LTS, with 1080 Ti 11GB GPU. Running on CPU is possible but significantly slow. 
