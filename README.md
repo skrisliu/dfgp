@@ -1,6 +1,8 @@
 # Deep Feature Gaussian Processes for Single-Scene Aerosol Optical Depth Reconstruction
 [Shengjie Liu](https://skrisliu.com), [Lu Zhang](https://luzhangstat.github.io/)
 
+University of Southern California
+
 This is a GitHub repo at [https://github.com/skrisliu/dfgp](https://github.com/skrisliu/dfgp)
 
 ![AOD Reconstruction on the MODIS-LA data](dfgp.jpg)
