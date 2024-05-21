@@ -10,7 +10,9 @@ This is a GitHub repo at [https://github.com/skrisliu/dfgp](https://github.com/s
 
 Tested on Python 3.9, Ubuntu 18.04.6 LTS, with 1080 Ti 11GB GPU. Running on CPU is possible but significantly slow. 
 
-This repo includes the MODIS-LA data, with trained CNN network and deep features. For the EMIT-BJ data, download at [Google Drive](https://drive.google.com/file/d/1BTZcS3HGaDS1ROhEObQK30LHvVZ3qesx/view?usp=drive_link).
+This repo includes the MODIS-LA data, with trained CNN network and deep features. For the EMIT-BJ data, download at [Google Drive](https://drive.google.com/file/d/1BTZcS3HGaDS1ROhEObQK30LHvVZ3qesx/view?usp=drive_link). 
+
+![AOD Reconstruction on the MODIS-LA data](dfgp.jpg)
 
 ## Demo on MODIS-LA
 	data/modis/im.npy         # features, 240*300*13, the last two dimensions are xy coordinates
