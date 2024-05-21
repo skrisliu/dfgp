@@ -1,7 +1,7 @@
 # Deep Feature Gaussian Processes for Single-Scene Aerosol Optical Depth Reconstruction
 [Shengjie Liu](https://skrisliu.com) (University of Southern California), [Lu Zhang](https://luzhangstat.github.io/) (University of Southern California)
 
-Data and Code for the published paper in IEEE Geoscience and Remote Sensing Letters: https://doi.org/10.1109/LGRS.2024.3398689
+Data and Code for the published paper in IEEE Geoscience and Remote Sensing Letters: [[https://github.com/skrisliu/dfgp](https://doi.org/10.1109/LGRS.2024.3398689)]([https://github.com/skrisliu/dfgp](https://doi.org/10.1109/LGRS.2024.3398689))
 
 This is a GitHub repo at [https://github.com/skrisliu/dfgp](https://github.com/skrisliu/dfgp)
 
