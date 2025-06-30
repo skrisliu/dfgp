@@ -15,7 +15,7 @@ Tested on Python 3.9, Ubuntu 18.04.6 LTS, with 1080 Ti 11GB GPU. Running on CPU 
 
 This repo includes the MODIS-LA data, with trained CNN network and deep features. For the EMIT-BJ data, download at [Google Drive](https://drive.google.com/file/d/1BTZcS3HGaDS1ROhEObQK30LHvVZ3qesx/view?usp=drive_link). 
 
-## Demo on MODIS-LA
+## Demo on MODIS-LA 
 	data/modis/im.npy         # features, 240*300*13, the last two dimensions are xy coordinates
 	data/modis/aod.npy        # label, 240*300
 	data/modis/trainmask.npy  # train mask, 240*300
