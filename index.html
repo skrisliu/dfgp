@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DFGP: Deep Feature Gaussian Processes for Single-Scene Aerosol Optical Depth Reconstruction</title>
+  <link rel="stylesheet" href="https://skrisliu.com/css/font.css">
+  <link rel="stylesheet" href="https://skrisliu.com/css/style.css">
+  <style>
+    .highlight2 {
+      padding: 1rem;
+      background-color: #e5e7eb;
+    }
+pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0Y5PM7E86"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-C0Y5PM7E86');
+  </script>
+
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KTP8BB68');
+  </script>
+</head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTP8BB68" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <div class="content">
+
+<h1>Deep Feature Gaussian Processes for Single-Scene Aerosol Optical Depth Reconstruction</h1>
+
+<hr>
+
+<p><a href="https://skrisliu.com">Shengjie Liu</a> (University of Southern California), <a href="https://luzhangstat.github.io/">Lu Zhang</a> (University of Southern California)</p>
+
+<p>Data and Code for the published paper in IEEE Geoscience and Remote Sensing Letters: <a href="https://doi.org/10.1109/LGRS.2024.3398689">https://doi.org/10.1109/LGRS.2024.3398689</a></p>
+
+<p>This is a GitHub repo at <a href="https://github.com/skrisliu/dfgp">https://github.com/skrisliu/dfgp</a></p>
+
+<hr>
+
+<p><img src="dfgp.jpg" alt="AOD Reconstruction on the MODIS-LA data" style="width: 800px;"></p>
+
+
+<hr>
+
+<h2>Key Packages</h2>
+
+
+<pre>pytorch==2.0.1
+gpytorch==1.11</pre>
+
+<p>Tested on Python 3.9, Ubuntu 18.04.6 LTS, with 1080 Ti 11GB GPU. Running on CPU is possible but significantly slow.</p>
+
+<p>This repo includes the MODIS-LA data, with trained CNN network and deep features. For the EMIT-BJ data, download at <a href="https://drive.google.com/file/d/1BTZcS3HGaDS1ROhEObQK30LHvVZ3qesx/view?usp=drive_link">Google Drive</a>.</p>
+
+<hr>
+
+<h2>Demo on MODIS-LA</h2>
+
+<pre>data/modis/im.npy         # features, 240*300*13, the last two dimensions are xy coordinates
+data/modis/aod.npy        # label, 240*300
+data/modis/trainmask.npy  # train mask, 240*300
+data/modis/testmask.npy   # test mask, 240*300
+data/modis/fea64.npy      # deep features, 240*300*64
+data/modis/cnn.pt         # trained CNN model</pre>
+
+<p>Data required to run the MODIS-LA demo are included in this repo.</p>
+
+
+<h3>DFGP</h3>
+
+<pre>Python demo12_modis_dfgp.py</pre>
+
+<h3>DFGPs</h3>
+
+<pre>Python demo12_modis_dfgps.py</pre>
+
+<h3>Baseline Methods</h3>
+
+<h3>CNN</h3>
+
+<pre>Python demo11_modis_cnn.py</pre>
+
+<p>Require networks.py and rscls.py to clip the image and load network</p>
+
+  </div>
+</body>
+
+</html>
